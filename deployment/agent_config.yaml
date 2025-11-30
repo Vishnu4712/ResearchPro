@@ -1,0 +1,97 @@
+# ResearchPro Deployment Configuration for Vertex AI Agent Engine
+
+apiVersion: v1
+kind: AgentDeployment
+metadata:
+  name: researchpro-agent
+  description: Intelligent Research Assistant Agent System
+  version: 1.0.0
+  author: Your Name
+  
+spec:
+  # Agent Configuration
+  agent:
+    class: ResearchProSystem
+    module: research_pro.main
+    
+  # Runtime Configuration
+  runtime:
+    python_version: "3.10"
+    memory: 2Gi
+    cpu: "1"
+    timeout: 300s
+    max_instances: 10
+    min_instances: 1
+    
+  # Environment Variables
+  environment:
+    - name: LOG_LEVEL
+      value: INFO
+    - name: USE_VERTEX_MEMORY
+      value: "true"
+    - name: MAX_SOURCES
+      value: "10"
+    - name: QUALITY_THRESHOLD
+      value: "0.8"
+      
+  # Secrets (from Google Cloud Secret Manager)
+  secrets:
+    - name: GOOGLE_API_KEY
+      secret_name: gemini-api-key
+      version: latest
+      
+  # Service Configuration
+  service:
+    port: 8080
+    type: ClusterIP
+    
+  # Health Checks
+  healthCheck:
+    path: /health
+    initialDelaySeconds: 30
+    periodSeconds: 10
+    timeoutSeconds: 5
+    
+  # Autoscaling
+  autoscaling:
+    enabled: true
+    minReplicas: 1
+    maxReplicas: 10
+    targetCPUUtilization: 70
+    targetMemoryUtilization: 80
+    
+  # Monitoring
+  monitoring:
+    enabled: true
+    metrics:
+      - research_requests_total
+      - research_duration_seconds
+      - quality_scores
+    tracing:
+      enabled: true
+      samplingRate: 0.1
+    logging:
+      enabled: true
+      level: INFO
+      
+  # Network Configuration
+  network:
+    enablePrivateEndpoint: false
+    allowedOrigins:
+      - "*"
+      
+  # Resource Quotas
+  quotas:
+    requestsPerMinute: 60
+    requestsPerDay: 10000
+    
+  # Dependencies
+  dependencies:
+    - name: vertex-ai-memory-bank
+      type: memory-service
+      config:
+        location: us-central1
+    - name: google-search
+      type: tool-service
+    - name: code-execution
+      type: tool-service
