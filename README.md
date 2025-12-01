@@ -1,12 +1,10 @@
 # 🔬 ResearchPro: Intelligent Research Assistant Agent System
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![ADK](https://img.shields.io/badge/Agent_Development_Kit-Google-green.svg)](https://google.github.io/adk-docs/)
 
-> **Winner Submission**: Kaggle 5-Day AI Agents Course Capstone Project  
 > **Track**: Agents for Good  
-> **Author**: [Your Name]
+> **Author**: Vishnu
 
 ---
 
@@ -14,17 +12,17 @@
 
 Academic researchers, students, and knowledge workers spend **15-20 hours per week** on manual research tasks:
 
-- 🔍 Searching multiple sources for relevant information
-- 📖 Reading and summarizing lengthy papers and articles
-- 📝 Organizing findings across different topics
-- 🧠 Tracking research progress and insights
-- 🔗 Synthesizing information from diverse sources
+- Searching multiple sources for relevant information
+- Reading and summarizing lengthy papers and articles
+- Organizing findings across different topics
+- Tracking research progress and insights
+- Synthesizing information from diverse sources
 
 This process is:
-- ⏰ **Time-intensive**: Hours spent on repetitive tasks
-- ❌ **Error-prone**: Important details get lost
-- 💔 **Inefficient**: No memory of past research
-- 🗂️ **Fragmented**: Insights scattered everywhere
+- **Time-intensive**: Hours spent on repetitive tasks
+- **Error-prone**: Important details get lost
+- **Inefficient**: No memory of past research
+- **Fragmented**: Insights scattered everywhere
 
 **Impact**: 12+ hours wasted weekly on tasks that could be automated.
 
@@ -46,11 +44,11 @@ This process is:
 
 ### Value Delivered
 
-- ⏱️ **Saves 12+ hours/week** on research tasks
-- 📚 **Processes 10x more sources** in the same time
-- 🎯 **85%+ accuracy** in information synthesis (evaluated)
-- 💾 **Remembers context** across multiple research sessions
-- 📊 **Full traceability** of information sources and decisions
+- **Saves 12+ hours/week** on research tasks
+- **Processes 10x more sources** in the same time
+- **85%+ accuracy** in information synthesis (evaluated)
+- **Remembers context** across multiple research sessions
+- **Full traceability** of information sources and decisions
 
 ---
 
@@ -109,7 +107,7 @@ ResearchPro implements a sophisticated multi-agent architecture:
 
 ## 🎓 Course Concepts Demonstrated
 
-This project showcases **6 advanced concepts** from the ADK course (requirement: 3):
+This project showcases **6 concepts** from the 5-Day AI Agents Intensive Course with Google:
 
 ### 1. ✅ Multi-Agent System
 - **Sequential Agents**: Search → Fact Check → Summarize → Report
@@ -390,59 +388,11 @@ python -m research_pro.evaluation --export results.json
 
 ---
 
-## 🤝 Contributing
-
-Contributions welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests for new features
-5. Submit a pull request
-
----
-
-## 📄 License
-
-MIT License - see [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- **Google ADK Team** - For the excellent Agent Development Kit
-- **Kaggle** - For the 5-Day AI Agents Course
-- **Gemini Team** - For powerful LLM capabilities
-- **Open Source Community** - For inspiration and tools
-
----
-
 ## 📧 Contact
 
-- **Author**: [Your Name]
-- **Email**: your.email@example.com
-- **GitHub**: [@yourusername](https://github.com/yourusername)
-- **LinkedIn**: [Your Profile](https://linkedin.com/in/yourprofile)
+- **Author**: Vishnu
+- **Email**: vishnupvt51@gmail.com
+- **GitHub**: [@yourusername](https://github.com/Vishnu4712)
+- **LinkedIn**: [Your Profile](https://www.linkedin.com/in/vishnu-936750267/)
 
 ---
-
-## 🎬 Demo Video
-
-[📹 Watch the 3-minute demo](https://youtube.com/watch?v=YOUR_VIDEO_ID)
-
-The video covers:
-- Problem statement and impact
-- Why multi-agent systems solve it uniquely
-- Architecture walkthrough
-- Live demo of ResearchPro in action
-- Build process and key learnings
-
----
-
-## 🌟 Star History
-
-If you find ResearchPro useful, please ⭐ star the repository!
-
----
-
-**Built with ❤️ using Google ADK and Gemini**
