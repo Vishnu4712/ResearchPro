@@ -392,6 +392,6 @@ python -m research_pro.evaluation --export results.json
 
 - **Author**: Vishnu
 - **Email**: vishnupvt51@gmail.com
-- **GitHub**: [@yourusername](https://github.com/Vishnu4712)
-- **LinkedIn**: [Your Profile](https://www.linkedin.com/in/vishnu-936750267/)
+- **GitHub**: [Vishnu4712](https://github.com/Vishnu4712)
+- **LinkedIn**: [Vishnu](https://www.linkedin.com/in/vishnu-936750267/)
 
